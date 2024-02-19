@@ -33,7 +33,7 @@
         android:id="@+id/imageViewPerfil"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:layout_margin="50dp"
+        android:layout_margin="40dp"
         android:layout_gravity="end"
         android:padding="10dp"
         android:src="@drawable/imagenpredeterminada"/>

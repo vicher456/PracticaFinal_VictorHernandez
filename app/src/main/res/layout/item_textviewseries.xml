@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--    CardView que contiene el nombre de las series
+
+        xmlns:android="http://schemas.android.com/apk/res/android" -> importa las configuraciones de android para Android Studio
+        android:layout_width -> ancho del elemento
+        android:layout_height -> alto del elemento
+        android:layout_marginTop -> margen superior del elemento
+        android:layout_marginBottom -> margen inferior del elemento
+        android:layout_marginStart -> margen izquierdo del elemento
+
+-->
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="12dp">
+
+<!--    TextView que contiene el nombre de las series
+
+        android:id -> id de referencia
+        android:layout_width -> ancho del elemento
+        android:layout_height -> alto del elemento
+        android:padding -> espaciado del elemento
+        android:textSize -> tamaño del elemento
+        android:textColor -> color del texto
+
+-->
+
+    <TextView
+        android:id="@+id/textViewSeries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+</androidx.cardview.widget.CardView>

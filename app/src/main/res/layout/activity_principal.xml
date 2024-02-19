@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--    LinearLayout del diseño que contiene la ventana principal de la app
+
+        xmlns:android="http://schemas.android.com/apk/res/android" -> importa las configuraciones de android para Android Studio
+        xmlns:app="http://schemas.android.com/apk/res-auto" -> importa las configuraciones de app para Android Studio
+        android:layout_width -> ancho del elemento
+        android:layout_height -> alto del elemento
+        android:orientation -> orientación de el elemento
+
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--    LinearLayout que contiene un mensaje de bienvenida y el nombre del usuario con el que se habia registrado
+
+            android:layout_width -> ancho del elemento
+            android:layout_height -> alto del elemento
+            android:layout_marginStart -> margen izquierdo del elemento
+            android:layout_marginEnd -> margen derecho del elemento
+            android:layout_marginTop -> margen superior del elemento
+            android:orientation -> orientacion del elemento
+
+    -->
+
+    <LinearLayout
+        android:layout_width="165dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <!--    TextView del texto de bienvenida
+
+                android:id -> id de referencia
+                android:layout_width -> ancho del elemento
+                android:layout_height -> alto del elemento
+                android:layout_marginStart -> margen izquierdo del elemento
+                android:layout_marginTop -> margen superior del elemento
+                android:gravity -> gravedad del elemento
+                android:text -> texto que se muestra
+                android:textColor -> color del texto
+                android:textSize -> tamaño del texto
+
+        -->
+
+        <TextView
+            android:id="@+id/textViewBienvenido"
+            android:layout_width="135dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="@string/textoBienvenido"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <!--    TextView del texto del usuario que ha iniciado sesion en la app
+
+                android:id -> id de referencia
+                android:layout_width -> ancho del elemento
+                android:layout_height -> alto del elemento
+                android:layout_marginStart -> margen izquierdo del elemento
+                android:layout_marginTop -> margen superior del elemento
+                android:gravity -> gravedad del elemento
+                android:text -> texto que se muestra
+                android:textColor -> color del texto
+                android:textSize -> tamaño del texto
+
+        -->
+
+        <TextView
+            android:id="@+id/textViewUsuarioPrincipal"
+            android:layout_width="135dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!--    LinearLayout que contiene la imagen para poder acceder al perfil
+
+            android:layout_width -> ancho del elemento
+            android:layout_height -> alto del elemento
+            android:layout_marginStart -> margen izquierdo del elemento
+            android:layout_marginTop -> margen superior del elemento
+            android:orientation -> orientación de el elemento
+
+    -->
+
+    <LinearLayout
+        android:layout_width="195dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="-200dp"
+        android:orientation="horizontal">
+
+        <!--    ImageButton de la foto de perfil, para poder aaceder a el
+
+                android:id -> id de referencia
+                android:layout_width -> ancho del elemento
+                android:layout_height -> alto del elemento
+                android:layout_margin -> margen total del elemento
+                android:padding -> espaciado del elemento
+                android:contentDescription -> texto descriptivo del elemento
+                android:background -> redondeado del elemento
+                android:scaleType -> escalado del elemento
+                app:srcCompat -> inserccion de imagen
+
+        -->
+
+        <ImageButton
+            android:id="@+id/imageButtonPerfilPrincipal"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="35dp"
+            android:padding="3dp"
+            android:contentDescription="@string/textoImageButton"
+            android:background="@drawable/roundcorner"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/imagenpredeterminada"/>
+    </LinearLayout>
+
+    <!--    LinearLayout que contiene los botones de series y peliculas
+
+            android:layout_width -> ancho del elemento
+            android:layout_height -> alto del elemento
+            android:layout_marginStart -> margen izquierdo del elemento
+            android:layout_marginEnd -> margen derecho del elemento
+            android:layout_marginTop -> margen superior del elemento
+            android:orientation -> orientación de el elemento
+
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="65dp"
+        android:orientation="horizontal">
+
+        <!--    Button de las series
+
+                android:id -> id de referencia
+                android:layout_width -> ancho del elemento
+                android:layout_height -> alto del elemento
+                android:layout_marginStart -> margen izquierdo del elemento
+                android:layout_marginEnd -> margen derecho del elemento
+                androi:layout_gravity -> gravedad del elemento
+                android:text -> texto que se muestra
+                android:padding -> espaciado del elemento
+                app:backgroundTint -> color de fondo del elemento
+                app:cornerRadius -> radio del borde del elemento
+
+        -->
+
+        <Button
+            android:id="@+id/buttonSeries"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="25dp"
+            android:layout_gravity="center"
+            android:text="@string/series"
+            android:padding="20dp"
+            app:backgroundTint="@color/colorBotonesLogin"
+            app:cornerRadius="5dp"/>
+
+        <!--    Button de las peliculas
+
+                android:id -> id de referencia
+                android:layout_width -> ancho del elemento
+                android:layout_height -> alto del elemento
+                android:layout_marginStart -> margen izquierdo del elemento
+                android:layout_marginEnd -> margen derecho del elemento
+                androi:layout_gravity -> gravedad del elemento
+                android:text -> texto que se muestra
+                android:padding -> espaciado del elemento
+                app:backgroundTint -> color de fondo del elemento
+                app:cornerRadius -> radio del borde del elemento
+
+        -->
+
+        <Button
+            android:id="@+id/buttonPeliculas"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="25dp"
+            android:layout_gravity="center"
+            android:text="@string/peliculas"
+            android:padding="20dp"
+            app:backgroundTint="@color/colorBotonesLogin"
+            app:cornerRadius="5dp"/>
+    </LinearLayout>
+
+    <!--    LinearLayout que contiene 2 contenedores para almacenar las series y las peliculas
+
+            android:layout_width -> ancho del elemento
+            android:layout_height -> alto del elemento
+            android:layout_margin -> margen total del elemento
+            android:orientation -> orientación de el elemento
+
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <!--    ScrollView para desplazarse por las diferentes series
+
+                android:layout_width -> ancho del elemento
+                android:layout_height -> alto del elemento
+                android:contentDescription -> texto descriptivo del elemento
+                androi:layout_gravity -> gravedad del elemento
+                android:orientation -> orientación de el elemento
+
+        -->
+
+        <ScrollView
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/textoImageButton"
+            android:layout_gravity="start"
+            android:orientation="vertical">
+
+            <!--    LinearLayout que contiene el contenedor de las series
+
+                    android:id -> id de referencia
+                    android:layout_width -> ancho del elemento
+                    android:layout_height -> alto del elemento
+                    android:visibility -> visibilidad del elemento
+                    android:orientation -> orientación de el elemento
+
+            -->
+
+            <LinearLayout
+                android:id="@+id/layoutSeries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <!--    RecyclerView de las series
+
+                        android:id -> id de referencia
+                        android:layout_width -> ancho del elemento
+                        android:layout_height -> alto del elemento
+                        android:nestedScrollingEnabled -> inhabilita el desplazamiento del RecyclerView
+
+                -->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewSeries"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false">
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </ScrollView>
+
+        <!--    ScrollView para desplazarse por las diferentes peliculas
+
+                android:layout_width -> ancho del elemento
+                android:layout_height -> alto del elemento
+                android:layout_marginStart -> margen derecho del elemento
+                android:contentDescription -> texto descriptivo del elemento
+                androi:layout_gravity -> gravedad del elemento
+                android:orientation -> orientación de el elemento
+
+        -->
+
+        <ScrollView
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/textoImageButton"
+            android:layout_gravity="start"
+            android:orientation="vertical">
+
+            <!--    LinearLayout que contiene el contenedor de las peliculas
+
+                    android:id -> id de referencia
+                    android:layout_width -> ancho del elemento
+                    android:layout_height -> alto del elemento
+                    android:visibility -> visibilidad del elemento
+                    android:orientation -> orientación de el elemento
+
+            -->
+
+            <LinearLayout
+                android:id="@+id/layoutPeliculas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <!--    RecyclerView de las peliculas
+
+                        android:id -> id de referencia
+                        android:layout_width -> ancho del elemento
+                        android:layout_height -> alto del elemento
+                        android:nestedScrollingEnabled -> inhabilita el desplazamiento del RecyclerView
+
+                -->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewPeliculas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false">
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

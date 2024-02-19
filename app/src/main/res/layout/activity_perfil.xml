@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--    LinearLayout del diseño que contiene el perfil de la app
+
+        xmlns:android="http://schemas.android.com/apk/res/android" -> importa las configuraciones de android para Android Studio
+        xmlns:app="http://schemas.android.com/apk/res-auto" -> importa las configuraciones de app para Android Studio
+        android:layout_width -> ancho del elemento
+        android:layout_height -> alto del elemento
+        android:orientation -> orientación de el elemento
+
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--    ImageView de la imagen de perfil
+
+            android:id -> id de referencia
+            android:layout_width -> ancho del elemento
+            android:layout_height -> alto del elemento
+            android:layout_margin -> margen total del elemento
+            android:layout_gravity -> gravedad del elemento
+            android:padding -> espaciado del elemento
+            android:src -> inserccion de imagen
+
+    -->
+
+    <ImageView
+        android:id="@+id/imageViewPerfil"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_margin="50dp"
+        android:layout_gravity="end"
+        android:padding="10dp"
+        android:src="@drawable/imagenpredeterminada"/>
+
+    <!--    CardView del campo del E-mail
+
+            android:layout_width -> ancho del elemento
+            android:layout_height -> alto del elemento
+            android:margin -> margen total del elemento
+
+    -->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_margin="30dp">
+
+        <!--    TextView del campo del E-mail
+
+                android:id -> id de referencia
+                android:layout_width -> ancho del elemento
+                android:layout_height -> alto del elemento
+                android:textAlignment -> alineado del texto
+                android:textColor -> color del texto
+                android:textSize -> tamaño del texto
+                android:gravity -> gravedad del elemento
+                android:hint -> texto que se muestra, pero que desaparece cuando escribes
+
+        -->
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:hint="@string/emailPerfil"/>
+    </androidx.cardview.widget.CardView>
+
+    <!--    CardView del campo del usuario
+
+            android:layout_width -> ancho del elemento
+            android:layout_height -> alto del elemento
+            android:margin -> margen total del elemento
+
+    -->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_margin="30dp">
+
+        <!--    TextView del campo del usuario
+
+                android:id -> id de referencia
+                android:layout_width -> ancho del elemento
+                android:layout_height -> alto del elemento
+                android:textAlignment -> alineado del texto
+                android:textColor -> color del texto
+                android:textSize -> tamaño del texto
+                android:gravity -> gravedad del elemento
+                android:hint -> texto que se muestra, pero que desaparece cuando escribes
+
+        -->
+
+        <TextView
+            android:id="@+id/textViewUsuario"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:hint="@string/usuarioPerfil"/>
+    </androidx.cardview.widget.CardView>
+
+    <!--    LinearLayout que contiene la contraseña y un boton para mostrar u ocultar la contraseña
+
+            android:layout_width -> ancho del elemento
+            android:layout_height -> alto del elemento
+            android:layout_marginTop -> margen superior del elemento
+            android:layout_marginStart -> margen izquierdo del elemento
+            android:orientation -> orientacion del elemento
+
+    -->
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:orientation="horizontal">
+
+        <!--    CardView del campo de la contraseña
+
+                android:layout_width -> ancho del elemento
+                android:layout_height -> alto del elemento
+                android:margin -> margen total del elemento
+
+        -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="190dp"
+            android:layout_height="40dp">
+
+            <!--    TextView del campo de la contraseña
+
+                    android:id -> id de referencia
+                    android:layout_width -> ancho del elemento
+                    android:layout_height -> alto del elemento
+                    android:textAlignment -> alineado del texto
+                    android:textColor -> color del texto
+                    android:textSize -> tamaño del texto
+                    android:gravity -> gravedad del elemento
+                    android:hint -> texto que se muestra, pero que desaparece cuando escribes
+
+            -->
+
+            <TextView
+                android:id="@+id/textViewContrasena"
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:hint="@string/contrasenaPerfil"/>
+        </androidx.cardview.widget.CardView>
+
+        <!--    ImageButton del ojo pra mostrar/ocultar la contraseña
+
+                android:id -> id de referencia
+                android:layout_width -> ancho del elemento
+                android:layout_height -> alto del elemento
+                android:marginStart -> margen izquierdo del elemento
+                android:padding -> espaciado del elemento
+                android:contentDescription -> texto descriptivo del elemento
+                android:background -> redondeado del elemento
+                android:scaleType -> escalado del elemento
+                app:srcCompat -> inserccion de imagen
+
+        -->
+
+        <ImageButton
+            android:id="@+id/imageButtonOjoConContrasena"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:padding="3dp"
+            android:contentDescription="@string/textoImageButton"
+            android:background="@drawable/roundcorner"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/imagenojocontrasena"/>
+    </LinearLayout>
+
+    <!--    Button para volver a la Activity de la ventana principal
+
+            android:id -> id de referencia
+            android:layout_width -> ancho del elemento
+            android:layout_height -> alto del elemento
+            android:marginTop -> margen superior del elemento
+            android:marginEnd -> margen derecho del elemento
+            android:layout_gravity -> gravedad del elemento
+            android:text -> texto que se muestra
+            android:padding -> espaciado del elemento
+            app:backgroundTint -> color de fondo del elemento
+            app:cornerRadius -> radio del borde del elemento
+
+    -->
+
+    <Button
+        android:id="@+id/buttonAtrasPerfil"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_gravity="end"
+        android:text="@string/atras"
+        android:padding="20dp"
+        app:backgroundTint="@color/colorBotonesLogin"
+        app:cornerRadius="5dp"/>
+</LinearLayout>

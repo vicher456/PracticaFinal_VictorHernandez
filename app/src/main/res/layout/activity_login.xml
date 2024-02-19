@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--    LinearLayout del diseño que contiene el login de la app
+
+        xmlns:android="http://schemas.android.com/apk/res/android" -> importa las configuraciones de android para Android Studio
+        xmlns:app="http://schemas.android.com/apk/res-auto" -> importa las configuraciones de app para Android Studio
+        xmlns:tools="http://schemas.android.com/tools" -> importa las configuraciones de card_view para Android Studio
+        android:layout_width -> ancho del elemento
+        android:layout_height -> alto del elemento
+        android:orientation -> orientación de el elemento
+
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--    ImageView de la imagen de perfil
+
+        android:id -> id de referencia
+        android:layout_width -> ancho del elemento
+        android:layout_height -> alto del elemento
+        android:layout_marginTop -> margen superior del elemento
+        android:layout_gravity -> gravedad del elemento
+        android:src -> inserccion de imagen
+
+-->
+
+    <ImageView
+        android:id="@+id/imageViewPerfilLogin"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/imagenpredeterminada"/>
+
+<!--    EditText para introducir el campo del E-mail
+
+        android:id -> id de referencia
+        android:layout_width -> ancho del elemento
+        android:layout_height -> alto del elemento
+        android:layout_gravity -> gravedad del elemento
+        android:layout_marginStart -> margen izquierdo del elemento
+        android:layout_marginTop -> margen superior del elemento
+        android:layout_marginEnd -> margen derecho del elemento
+        android:hint -> texto que se muestra, pero que desaparece cuando escribes
+        android:inputType -> tipo de texto que se introduce
+        tools:ignore -> ignora errores que no afectan a la ejecución
+
+-->
+
+    <EditText
+        android:id="@+id/editTextPerfilEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="50dp"
+        android:hint="@string/E_mail"
+        android:inputType="text"
+        tools:ignore="TextFields,TouchTargetSizeCheck" />
+
+<!--    EditText para introducir el campo de la contraseña
+
+        android:id -> id de referencia
+        android:layout_width -> ancho del elemento
+        android:layout_height -> alto del elemento
+        android:layout_gravity -> gravedad del elemento
+        android:layout_marginStart -> margen izquierdo del elemento
+        android:layout_marginTop -> margen superior del elemento
+        android:layout_marginEnd -> margen derecho del elemento
+        android:layout_marginBottom -> margen inferior del elemento
+        android:hint -> texto que se muestra, pero que desaparece cuando escribes
+        android:inputType -> tipo de texto que se introduce
+        tools:ignore -> ignora errores que no afectan a la ejecución
+
+-->
+
+    <EditText
+        android:id="@+id/editTextContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="70dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        tools:ignore="TouchTargetSizeCheck" />
+
+<!--    LinearLayout que contiene los botones para registrarse o iniciar sesion
+
+        android:layout_width -> ancho del elemento
+        android:layout_height -> alto del elemento
+        android:orientation -> orientación del elemento
+
+-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:orientation="horizontal">
+
+ <!--   Button para registrar el usuario en la Activity de registro
+
+        android:id -> id de referencia
+        android:layout_width -> ancho del elemento
+        android:layout_height -> alto del elemento
+        android:layout_marginStart -> margen izquierdo del elemento
+        android:layout_marginTop -> margen superior del elemento
+        android:text -> texto que se muestra
+        android:padding -> espaciado del elemento
+        app:backgroundTint -> color de fondo del elemento
+        app:cornerRadius -> radio del borde del elemento
+
+-->
+
+        <Button
+            android:id="@+id/buttonRegistrar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/registrar"
+            android:padding="20dp"
+            app:backgroundTint="@color/colorBotonesLogin"
+            app:cornerRadius="5dp"/>
+
+<!--   Button para iniciar sesion con el usuario registrado en la Activity de registro
+
+       android:id -> id de referencia
+       android:layout_width -> ancho del elemento
+       android:layout_height -> alto del elemento
+       android:layout_marginStart -> margen izquierdo del elemento
+       android:layout_marginTop -> margen superior del elemento
+       android:text -> texto que se muestra
+       android:padding -> espaciado del elemento
+       app:backgroundTint -> color de fondo del elemento
+       app:cornerRadius -> radio del borde del elemento
+
+-->
+
+        <Button
+            android:id="@+id/buttonInicioSesion"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/inicioSesion"
+            android:padding="20dp"
+            app:backgroundTint="@color/colorBotonesLogin"
+            app:cornerRadius="5dp"/>
+    </LinearLayout>
+</LinearLayout>

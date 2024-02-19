@@ -1,0 +1,64 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- String principal de la aplicación -->
+    <string name="app_name">PracticaFinal_VictorHernandez</string>
+
+    <!-- Strings de activity_login -->
+    <string name="E_mail">E-mail</string>
+    <string name="password">Contraseña</string>
+    <string name="registrar">REGISTRARSE</string>
+    <string name="inicioSesion">INICIAR SESIÓN</string>
+
+    <!-- Strings de activity_registro -->
+    <string name="seleccionImagen">Seleccione su imagen de perfil</string>
+    <string name="email">E-mail</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="cancelar">CANCELAR</string>
+    <string name="confirmar">CONFIRMAR</string>
+
+    <!-- Strings de activity_principal -->
+    <string name="textoBienvenido">Bienvenido,</string>
+    <string name="textoImageButton">Imagen del ImageButton</string>
+    <string name="series">SERIES</string>
+    <string name="peliculas">PELÍCULAS</string>
+
+    <!-- Strings de activity_perfil -->
+    <string name="emailPerfil">E-mail</string>
+    <string name="usuarioPerfil">Usuario</string>
+    <string name="contrasenaPerfil">Contraseña</string>
+    <string name="atras">ATRÁS</string>
+
+    <!-- Strings de activity_informacion -->
+    <string name="titulo"></string>
+    <string name="imagen"></string>
+    <string name="sinopsis"></string>
+    <string name="atrasInfo">ATRÁS</string>
+
+    <!-- String Array de Imagenes de Perfil (activity_registro) -->
+    <string-array name="seleccionImagenesPerfil">
+        <item></item>
+        <item tools:ignore="Typos">imagenperfil1</item>
+        <item tools:ignore="Typos">imagenperfil2</item>
+        <item tools:ignore="Typos">imagenperfil3</item>
+        <item tools:ignore="Typos">imagenperfil4</item>
+        <item tools:ignore="Typos">imagenperfil5</item>
+    </string-array>
+
+    <!-- String Array de Series (activity_principal) -->
+    <string-array name="seleccionSeries">
+        <item>La Casa de Papel</item>
+        <item>Juego de Tronos</item>
+        <item>The Walking Dead</item>
+        <item>Stranger Things</item>
+        <item>Los Simpson</item>
+    </string-array>
+
+    <!-- String Array de Películas (activity_principal) -->
+    <string-array name="seleccionPeliculas">
+        <item>Interestellar</item>
+        <item>Gladiator</item>
+        <item>Titanic</item>
+        <item>WALL·E</item>
+        <item>Intocable</item>
+    </string-array>
+</resources>

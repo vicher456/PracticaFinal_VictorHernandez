@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1021552326843",
+    "project_id": "marvel-1643231722071",
+    "storage_bucket": "marvel-1643231722071.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021552326843:android:2554839f76cbf33db7119e",
+        "android_client_info": {
+          "package_name": "com.example.practicafinal_victorhernandez"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMkKv0h6HsWKyyTC2bNXNvYLAWV4qllTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

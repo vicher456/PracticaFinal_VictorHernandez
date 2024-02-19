@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--    LinearLayout del diseño que contiene el registro de la app
+
+        xmlns:android="http://schemas.android.com/apk/res/android" -> importa las configuraciones de android para Android Studio
+        xmlns:app="http://schemas.android.com/apk/res-auto" -> importa las configuraciones de app para Android Studio
+        xmlns:tools="http://schemas.android.com/tools" -> importa las configuraciones de card_view para Android Studio
+        android:layout_width -> ancho del elemento
+        android:layout_height -> alto del elemento
+        android:orientation -> orientación de el elemento
+
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--    ImageView de la imagen de perfil
+
+        android:id -> id de referencia
+        android:layout_width -> ancho del elemento
+        android:layout_height -> alto del elemento
+        android:layout_marginTop -> margen superior del elemento
+        android:layout_marginBottom -> margen inferior del elemento
+        android:layout_gravity -> gravedad del elemento
+        android:src -> inserccion de imagen
+
+-->
+
+    <ImageView
+        android:id="@+id/imageButtonPerfilRegistro"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/imagenpredeterminada"/>
+
+<!--    TextView del texto de selección de la imagen de perfil
+
+        android:id -> id de referencia
+        android:layout_width -> ancho del elemento
+        android:layout_height -> alto del elemento
+        android:layout_gravity -> gravedad del elemento
+        android:text -> texto que se muestra
+        android:textAlignment -> alineado del texto
+        android:textColor -> color del texto
+        android:textSize -> tamaño del texto
+
+-->
+
+    <TextView
+        android:id="@+id/textViewSeleccion"
+        android:layout_width="290dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:text="@string/seleccionImagen"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+<!--    Spinner para seleccionar la imagen del perfil
+
+        android:id -> id de referencia
+        android:layout_width -> ancho del elemento
+        android:layout_height -> alto del elemento
+        android:layout_gravity -> gravedad del elemento
+        android:entries -> referencia al array correspondiente
+
+-->
+
+    <Spinner
+        android:id="@+id/spinnerSelectorImagenPerfil"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:entries="@array/seleccionImagenesPerfil"/>
+
+<!--    EditText para introducir el campo del E-mail
+
+        android:id -> id de referencia
+        android:layout_width -> ancho del elemento
+        android:layout_height -> alto del elemento
+        android:layout_gravity -> gravedad del elemento
+        android:layout_marginStart -> margen izquierdo del elemento
+        android:layout_marginTop -> margen superior del elemento
+        android:layout_marginEnd -> margen derecho del elemento
+        android:layout_marginBottom -> margen inferior del elemento
+        android:hint -> texto que se muestra, pero que desaparece cuando escribes
+        android:inputType -> tipo de texto que se introduce
+        tools:ignore -> ignora errores que no afectan a la ejecución
+
+-->
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="60dp"
+        android:hint="@string/email"
+        android:inputType="text"
+        tools:ignore="TextFields,TouchTargetSizeCheck" />
+
+<!--    EditText para introducir el campo del nombre del usuario
+
+        android:id -> id de referencia
+        android:layout_width -> ancho del elemento
+        android:layout_height -> alto del elemento
+        android:layout_gravity -> gravedad del elemento
+        android:layout_marginStart -> margen izquierdo del elemento
+        android:layout_marginEnd -> margen derecho del elemento
+        android:layout_marginBottom -> margen inferior del elemento
+        android:hint -> texto que se muestra, pero que desaparece cuando escribes
+        android:inputType -> tipo de texto que se introduce
+        tools:ignore -> ignora errores que no afectan a la ejecución
+
+-->
+
+    <EditText
+        android:id="@+id/editTextUsuarioRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="60dp"
+        android:hint="@string/usuario"
+        android:inputType="text"
+        tools:ignore="TouchTargetSizeCheck" />
+
+<!--    EditText para introducir el campo de la contraseña
+
+        android:id -> id de referencia
+        android:layout_width -> ancho del elemento
+        android:layout_height -> alto del elemento
+        android:layout_gravity -> gravedad del elemento
+        android:layout_marginStart -> margen izquierdo del elemento
+        android:layout_marginEnd -> margen derecho del elemento
+        android:layout_marginBottom -> margen inferior del elemento
+        android:hint -> texto que se muestra, pero que desaparece cuando escribes
+        android:inputType -> tipo de texto que se introduce
+        tools:ignore -> ignora errores que no afectan a la ejecución
+
+-->
+
+    <EditText
+        android:id="@+id/editTextContrasenaRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="35dp"
+        android:hint="@string/contrasena"
+        android:inputType="textPassword"
+        tools:ignore="TouchTargetSizeCheck" />
+
+<!--    LinearLayout que contiene los botones para registrarse o cancelar el registro
+
+        android:layout_width -> ancho del elemento
+        android:layout_height -> alto del elemento
+        android:orientation -> orientación de el elemento
+
+-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:orientation="horizontal">
+
+<!--    Button para cancelar el registro del usuario
+
+        android:id -> id de referencia
+        android:layout_width -> ancho del elemento
+        android:layout_height -> alto del elemento
+        android:layout_marginTop -> margen superior del elemento
+        android:layout_marginStart -> margen izquierdo del elemento
+        android:text -> texto que se muestra
+        android:padding -> espaciado del elemento
+        app:backgroundTint -> color de fondo del elemento
+        app:cornerRadius -> radio del borde del elemento
+
+-->
+
+        <Button
+            android:id="@+id/buttonCancelar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/cancelar"
+            android:padding="20dp"
+            app:backgroundTint="@color/colorBotonesLogin"
+            app:cornerRadius="5dp"/>
+
+<!--    Button para confirmar el registro del usuario
+
+        android:id -> id de referencia
+        android:layout_width -> ancho del elemento
+        android:layout_height -> alto del elemento
+        android:layout_marginTop -> margen superior del elemento
+        android:layout_marginStart -> margen izquierdo del elemento
+        android:text -> texto que se muestra
+        android:padding -> espaciado del elemento
+        app:backgroundTint -> color de fondo del elemento
+        app:cornerRadius -> radio del borde del elemento
+
+-->
+
+        <Button
+            android:id="@+id/buttonConfirmar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="70dp"
+            android:text="@string/confirmar"
+            android:padding="20dp"
+            app:backgroundTint="@color/colorBotonesLogin"
+            app:cornerRadius="5dp"/>
+    </LinearLayout>
+</LinearLayout>

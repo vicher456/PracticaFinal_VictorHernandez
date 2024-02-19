@@ -38,6 +38,23 @@
         android:layout_gravity="center"
         android:src="@drawable/imagenpredeterminada"/>
 
+<!--    ImageView del logo de la app
+
+        android:layout_width -> ancho del elemento
+        android:layout_height -> alto del elemento
+        android:layout_marginTop -> margen superior del elemento
+        android:layout_gravity -> gravedad del elemento
+        android:src -> inserccion de imagen
+
+-->
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/imagenlogo"/>
+
 <!--    EditText para introducir el campo del E-mail
 
         android:id -> id de referencia
@@ -59,7 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="65dp"
         android:layout_marginEnd="50dp"
         android:hint="@string/E_mail"
         android:inputType="text"
